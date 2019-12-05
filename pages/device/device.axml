@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="filtrateBoard" style="z-index:{{zindex}};">
+    <view>
+      <view>
+        <button class="btn"  style="left:0" type="default" onTap="onCancelBtnTap">取消</button>
+      </view>
+      <view>
+        <button class="btn" style="right:0" type="primary" onTap="onConfirmBtnTap">筛选</button>
+      </view>
+    </view>
+  </view>
+  <view class="search">
+    <search-bar placeholder="搜索" onClear="onClear" onCancel="onCancel" onSubmit="search" showCancelButton="{{false}}" />
+    <view class="filtrate" onTap="onFiltrateTap">{{filtratePalceholder}}</view>
+  </view>
+  <list>
+    <block a:for="{{deviceItems}}">
+      <list-item onClick="onItemClick" index="{{index}}" last="{{index === (items.length - 1)}}">
+					{{item.ddeviceName}}
+        <view class="am-list-brief">{{item.dsite}}</view>
+        <view slot="extra">
+						{{item.ddeviceCid}}
+        </view>
+      </list-item>
+    </block>
+  </list>
+</view>

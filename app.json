@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/device/device",
+    "pages/index/index",
+    "pages/device/device",
+    "pages/deviceDetail/deviceDetail",
+    "pages/deviceAlter/deviceAlter"
+  ],
+  "window": {
+    "defaultTitle": "车间资产数字化管理"
+  }
+}

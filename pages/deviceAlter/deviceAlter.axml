@@ -1,0 +1,70 @@
+<view class="container">
+  <list class="">
+    <list-item >
+				设备编号
+      <view slot="extra">
+					<input class="input"  maxlength="50" onBlur="onBlur" value="" />
+      </view>
+    </list-item>
+    <list-item >
+				设备名称
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+					设备型号/规格
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+					制造商
+      <view slot="extra" class="font-break">
+        <text>text	{{item}}</text>
+      </view>
+    </list-item>
+    <list-item >
+					投产时间
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+				车间
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+				位置
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+				占地面积
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+				备注
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+    <list-item >
+				负责人
+      <view slot="extra">
+						{{item.extra}}1
+      </view>
+    </list-item>
+  </list>
+  <view class="btn">
+    <button type="warn">删除</button>
+  </view>
+  <view class="btn">
+    <button type="primary">保存</button>
+  </view>
+</view>

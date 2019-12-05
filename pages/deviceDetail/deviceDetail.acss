@@ -1,0 +1,13 @@
+.font-break {
+  white-space: normal;
+}
+
+.am-list-extra {
+  flex-basis: 50%;
+}
+
+.btn {
+  display: inline-block;
+  margin: 16rpx;
+  width: 718rpx;
+}

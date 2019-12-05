@@ -1,0 +1,11 @@
+page {
+  flex: 1;
+  display: flex;
+}
+.container{
+  width: 750rpx;
+background-color: #ffffff;
+  /* margin: 0 32rpx; */
+}
+
+

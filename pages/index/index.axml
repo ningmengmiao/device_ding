@@ -1,0 +1,13 @@
+<view class="container">
+  <view>
+    <search-bar value="{{value}}" placeholder="搜索" onInput="handleInput" onClear="handleClear" onFocus="handleFocus" onBlur="handleBlur" onCancel="handleCancel" onSubmit="handleSubmit" showCancelButton="{{false}}" />
+  </view>
+  <list>
+    <list-item arrow="{{true}}" onClick="toDevice">装调车间重要设备台账
+    </list-item>
+    <list-item arrow="{{true}}" onClick="onItemClick">装调车间信息化设备台账
+    </list-item>
+     <list-item arrow="{{true}}" onClick="onItemClick">装调车间办公设备台账
+    </list-item>
+  </list>
+</view>
