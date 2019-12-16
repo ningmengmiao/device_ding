@@ -1,0 +1,15 @@
+button {
+  margin: 24rpx;
+  width: 200rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  line-height: 70rpx;
+}
+
+input {
+  display: inline-block;
+  margin-left: 24rpx;
+  width: 70%;
+  height: 60rpx;
+  box-shadow: 0 0 0rpx 4rpx #eaebed inset;
+}

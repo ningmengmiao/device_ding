@@ -7,7 +7,14 @@
     </list-item>
     <list-item arrow="{{true}}" onClick="onItemClick">装调车间信息化设备台账
     </list-item>
-     <list-item arrow="{{true}}" onClick="onItemClick">装调车间办公设备台账
+    <list-item arrow="{{true}}" onClick="onItemClick">装调车间办公设备台账
     </list-item>
   </list>
+  <view a:if="{{user.isAdmin}}" class="btn">
+    <button class="icon" size="default" type="primary" style="background-image: url(../../icon/download.svg)" onTap="onDownloadTap"></button>
+    <button class="icon" size="default" type="primary" style="background-image: url(../../icon/add.svg)" onTap="onAddTap"></button>
+    <!--<view ><image class="icon" mode="scaleToFill" src="../../icon/download.svg"/></view> -->
+    <!--<view  ><image class="icon" mode="scaleToFill" src="../../icon/add.svg"/></view> -->
+  </view>
+
 </view>

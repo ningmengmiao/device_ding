@@ -12,22 +12,22 @@
   background-size: 100% 100%;
 }
 
-.help {
-  color: #3296fa;
-  display: inline-block;
-  background-color: #f7f7f7;
-  position: fixed;
-  right: 10rpx;
-  bottom: 10rpx;
-  padding: 8rpx;
+.icon {
+  background-color: #a5d2f5;
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 36rpx;
+  border: none;
+  margin: 10rpx;
+  box-shadow: 0rpx 4rpx 8rpx 0rpx #a7a7a8;
+  background-repeat: no-repeat;
+  background-size: 72rpx 72rpx;
 }
 
-.topbtn {
-  display: inline-block;
-  width: 50%;
-  height: 80rpx;
-  line-height: 80rpx;
-  background-color: white;
+.btn {
+  position: absolute;
+  right: 28rpx;
+  bottom: 32rpx;
 }
 
 .list-title {

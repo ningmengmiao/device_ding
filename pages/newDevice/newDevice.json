@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "list": "../../node_modules/mini-antui/es/list/index",
+    "list-item": "../../node_modules/mini-antui/es/list/list-item/index",
+    "picker-item": "mini-antui/es/picker-item/index"
+  }
+}

@@ -11,3 +11,55 @@
   margin: 16rpx;
   width: 718rpx;
 }
+
+.prompt {
+  width: 518rpx;
+  height: 380rpx;
+  position: fixed;
+  left: 100rpx;
+  top: 300rpx;
+  background-color: #fff;
+  padding: 32rpx;
+  box-shadow: 0rpx 2rpx 8rpx 0rpx #a7a7a8;
+}
+
+.prompt-title {
+  line-height: 100rpx;
+  height: 100rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+
+.prompt-message {
+  line-height: 72rpx;
+  font-size: 28rpx;
+}
+
+.prompt-input {
+  border-bottom: #82dbf7 solid 2rpx;
+  width: 478rpx;
+}
+
+.prompt-btn {
+  position: absolute;
+  bottom: 6rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: none;
+  background-color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+  right: 30rpx;
+}
+
+.prompt-btn .prompt-btn-y {
+  display: inline-block;
+  color: #3296fa;
+  right: 32rpx;
+}
+
+.prompt-btn .prompt-btn-n {
+  display: inline-block;
+  color: #c1c1c1;
+  right: 132rpx;
+}

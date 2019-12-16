@@ -1,9 +1,9 @@
-const CURRENT = 'dev'
-// const CURRENT = 'prod'
+// const CURRENT = 'dev'
+const CURRENT = 'prod'
 const PROFILES = {
   'dev': {
     'online': false,
-    'domain': 'http://bptop.vaiwan.com' 
+    'domain': 'http://bptop.vaiwan.com'
   },
   'test': {
     'online': false,

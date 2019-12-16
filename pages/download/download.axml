@@ -1,0 +1,15 @@
+<view class="container">
+  <picker-item data-field="bank" value="{{form[0]}}" onPickerTap="onPickerTap">
+      选择报表
+  </picker-item>
+  <view>
+    <button size="default" type="primary" onTap="downLocalhost" loading="{{loading1}}">下载到本地</button>
+  </view>
+  <view>
+    <button size="default" type="primary" onTap="openFile" >直接打开</button>
+  </view>
+  <view>
+    <button size="default" type="primary" onTap="sendEmail" loading="{{loading2}}">发送到邮箱</button>
+    <input value="{{to}}" onBlur="onBlur" />
+  </view>
+</view>

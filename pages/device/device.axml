@@ -1,18 +1,28 @@
 <view class="container">
-  <view class="filtrateBoard" style="z-index:{{zindex}};">
-    <view>
-      <view>
-        <button class="btn"  style="left:0" type="default" onTap="onCancelBtnTap">取消</button>
-      </view>
-      <view>
-        <button class="btn" style="right:0" type="primary" onTap="onConfirmBtnTap">筛选</button>
-      </view>
-    </view>
-  </view>
+  <!--<view class="filtrateBoard" style="z-index:{{zindex}};"><view><view><picker-item placeholder="" value="{{bank}}" onPickerTap="onPickerTap">
+      设备名称</picker-item><picker-item placeholder="" value="{{bank}}" onPickerTap="onPickerTap">
+      调试间</picker-item><picker-item placeholder="" value="{{bank}}" onPickerTap="onPickerTap">
+      负责人</picker-item><view><view class="filtrateBoard-title"><image class="icon" mode="scaleToFill" src="../../icon/device-01.svg"/>
+         
+              负责人</view><view class="filtrateBoard-item" hover-class="filtrateBoard-item-hover">
+            自己</view></view><radio value=""/></view><view class="filtrateBoard-btn"><button class="btn" style="left:0" type="default" onTap="onCancelBtnTap">取消</button><button class="btn" style="right:0" type="primary" onTap="onConfirmBtnTap">筛选</button></view></view></view> -->
   <view class="search">
     <search-bar placeholder="搜索" onClear="onClear" onCancel="onCancel" onSubmit="search" showCancelButton="{{false}}" />
     <view class="filtrate" onTap="onFiltrateTap">{{filtratePalceholder}}</view>
   </view>
+  <view hidden="{{filtrateDisable}}">
+    <button class="btn" onTap="onBtn1Tap">{{btn1Placeholder}}
+      <image class="img" src="{{btnIcon1}}" /></button>
+    <button class="btn" onTap="onBtn2Tap">场地
+      <image class="img" src="{{btnIcon2}}" /></button>
+    <button class="btn" onTap="onBtn3Tap">设备名称
+      <image class="img" src="{{btnIcon3}}" /></button>
+  </view>
+  <filter show="{{filterShow}}" max="{{1}}" onMaskTap="onMaskTap">
+    <block a:for="{{filterItems}}">
+      <filter-item a:if ="{{item.name==null}}" value="{{item.item}}" id="{{item.id}}" onChange="handleCallBack"/>
+    </block>
+  </filter>
   <list>
     <block a:for="{{deviceItems}}">
       <list-item onClick="onItemClick" index="{{index}}" last="{{index === (items.length - 1)}}">

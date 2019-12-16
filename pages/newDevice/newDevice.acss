@@ -1,0 +1,25 @@
+.topPicker {
+  font-size: 32rpx;
+}
+
+.board {
+  background-color: #edf5ff;
+  width: 750rpx;
+  position: absolute;
+  left: 0;
+  top: 120rpx;
+}
+
+.btn {
+  display: inline-block;
+  margin: 16rpx;
+  width: 718rpx;
+}
+
+.input {
+  font-size: 32rpx;
+}
+
+.am-list-extra {
+  flex-basis: 50%;
+}

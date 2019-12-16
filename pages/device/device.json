@@ -1,9 +1,11 @@
 {
-  "usingComponents":{
-
+  "usingComponents": {
     "list": "../../node_modules/mini-antui/es/list/index",
     "list-item": "../../node_modules/mini-antui/es/list/list-item/index",
-    "search-bar": "mini-antui/es/search-bar/index"
-    }
-    
-    }
+    "input-item": "mini-antui/es/input-item/index",
+    "picker-item": "mini-antui/es/picker-item/index",
+    "search-bar": "mini-antui/es/search-bar/index",
+    "filter": "mini-antui/es/filter/index",
+    "filter-item": "mini-antui/es/filter/filter-item/index"
+  }
+}

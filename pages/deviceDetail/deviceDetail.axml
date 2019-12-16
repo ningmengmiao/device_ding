@@ -30,7 +30,12 @@
 						{{item.dproductionTime}}
       </view>
     </list-item>
- 
+    <list-item >
+					检定日期
+      <view slot="extra">
+						{{item.dtestTime}}
+      </view>
+    </list-item>
     <list-item >
 				车间
       <view slot="extra">
@@ -62,9 +67,29 @@
       </view>
     </list-item>
   </list>
-<view class="btn">
-   <button type="primary">修改</button>
-  
-</view>
- 
+  <view class="btn">
+    <button a:if="{{user.isAdmin}}" type="primary" onTap="onAlterTap" style="margin-bottom:0px;">修改</button>
+  </view>
+  <view class="btn">
+    <button type="primary" onTap="onSubmitTap">设备异常提报</button>
+  </view>
+  <view class="prompt" style="z-index:{{promptZIndex}}">
+    <view class="prompt-title">
+    异常问题提报
+    </view>
+    <view class="prompt-message">
+    向管理员{{admin[0].name}}提报设备异常详细情况,尽量不要超过50字。
+    </view>
+    <form onSubmit="onInputSubmit">
+      <input class="prompt-input" placeholder="请在此处填写" name="promptInput"/>
+      <view class="prompt-btn">
+        <button class="prompt-btn prompt-btn-n" onTap="onPromptNTap">
+       取消
+        </button>
+        <button class="prompt-btn prompt-btn-y" form-type="submit">
+       发送
+        </button>
+      </view>
+    </form>
+  </view>
 </view>
